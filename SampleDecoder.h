@@ -20,16 +20,22 @@
 
 #include <list>
 #include <vector>
+#include <string>
+#include <fstream>
+#include <cstring>
+#include <iostream>
 #include <algorithm>
 
+#include "DataLoading.h"
+
+
 class SampleDecoder {
+	
 public:
 	SampleDecoder();
 	~SampleDecoder();
 
 	double decode(const std::vector< double >& chromosome) const;
-
-private:
 };
 
 #endif
